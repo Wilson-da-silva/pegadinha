@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#botao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+    margin-left: 45%;
+}
+
+.botao {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.8rem;
+    margin-left: 2.2rem;
+}
+
+#parar {
+    display: none;
+}
+
+#audio {
+    visibility: hidden;
+}

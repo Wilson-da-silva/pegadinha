@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Alerta</title>
+</head>
+<body id="body">
+
+
+    <main>
+        <div id="botao">
+            <div>
+                <button type="submit" class="botao" id="alerta" onclick="tocar()"><h2>Clique aqui!</h2></button>
+            </div>
+    
+            <div>
+                <button  class="botao" id="parar" onclick="para()"><h3>Parar</h3></button>
+            </div>
+        </div>
+
+        <footer>
+            <audio id="som" loop>
+                <source src="./som/🔴 Melhor Efeito Sonoro Alerta Vermelho - Best Red Alert Sound Effect HQ.m4a">
+            </audio>
+        </footer>
+       
+
+    </main>
+
+  
+    
+</body>
+</html>
+
+<script>
+
+    var som = document.getElementById("som");
+    var alerta = document.getElementById("alerta");
+    var parar = document.getElementById("parar");
+
+
+    function tocar() {
+        som.play();
+        alerta.style.display = "none";
+        parar.style.display = "flex";
+        alert("Som acionado!!");
+
+    }
+
+
+    function para() {
+        alert("Esse botão não funciona, dá seu jeito de parar esse som :)")
+    }
+
+</script>
